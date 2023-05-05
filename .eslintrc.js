@@ -37,5 +37,6 @@ module.exports = {
     'jsx-a11y/anchor-is-valid': 0,
     'no-console': 0,
     'no-unused-vars': 0,
+    'jsx-a11y/alt-text': 0,
   },
 };
