@@ -17,6 +17,7 @@ import { Nav } from './styled';
 export default function Header() {
   const dispatch = useDispatch();
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
+  const userName = useSelector((state) => state.auth.user.nome);
 
   const handleLogout = (e) => {
     e.preventDefault();
@@ -42,7 +43,7 @@ export default function Header() {
         </Link>
       )}
 
-      {isLoggedIn && <FaCircle size={24} color="#66ff33" />}
+      {isLoggedIn && <div>{userName}</div>}
     </Nav>
   );
 }
